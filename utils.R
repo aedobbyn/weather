@@ -47,6 +47,7 @@ clean_raw <- function(tbl) {
 
 summarise_weather <- function(tbl) {
   tbl %>% 
+    dobtools::style_numeric() %>% 
     dobtools::replace_na_df() %>% 
     mutate(
       date_time = as.character(date_time)

@@ -10,8 +10,8 @@ msg <- mime() %>%
   subject(glue("Forecast is {clean$description[2]} for tomorrow")) %>% 
   html_body(print(xtable(gist), type="html")) 
 
-msg <- msg %>% 
-  attach_file(here("plots", glue("{lubridate::today()}_temperature.svg")))
+# msg <- msg %>% 
+  # attach_file(here("plots", glue("{lubridate::today()}_temperature.svg"))) %>% 
   # attach_file(here("plots", glue("{lubridate::today()}_rain.svg")))
 
 send_message(msg)
