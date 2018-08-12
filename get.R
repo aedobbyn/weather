@@ -1,4 +1,3 @@
-library(here)
 source(prepend_root_dir("startup.R"))
 source(prepend_root_dir("utils.R"))
 

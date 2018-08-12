@@ -1,14 +1,14 @@
-library(here)
-# set_here("/Users/amanda/Desktop/Projects/weather")
+message(glue::glue("It is currently {lubridate::now()}."))
 
-root_dir <- "/Users/amanda/Desktop/Projects/weather"
+root_dir <- getwd()
 prepend_root_dir <- function(path) {
   glue::glue("{root_dir}/{path}")
 }
-suppressPackageStartupMessages(library(gmailr))
+
 source(prepend_root_dir("get.R"))
 
-# use_secret_file("weather.json")
+# gmail_auth()
+# use_secret_file(prepend_root_dir("weather.json"))
 
 msg <- mime() %>%
   to("amanda.e.dobbyn@gmail.com") %>%
@@ -16,8 +16,8 @@ msg <- mime() %>%
   subject(glue("Forecast is {clean$description[2]} for tomorrow")) %>% 
   html_body(print(xtable(gist), type="html")) 
 
-# msg <- msg %>% 
-  # attach_file(here("plots", glue("{lubridate::today()}_temperature.svg"))) %>% 
-  # attach_file(here("plots", glue("{lubridate::today()}_rain.svg")))
+# msg <- msg %>%
+#   attach_file(here("plots", glue("{lubridate::today()}_temperature.svg"))) %>%
+#   attach_file(here("plots", glue("{lubridate::today()}_rain.svg")))
 
 send_message(msg)

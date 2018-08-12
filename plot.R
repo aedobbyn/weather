@@ -17,7 +17,6 @@ temp_plot %>%
   ggsave(filename = glue("{lubridate::today()}_temperature.svg"),
          device = "svg", path = here("plots"))
 
-temp_plot %>% 
+rain_plot %>% 
   ggsave(filename = glue("{lubridate::today()}_rain.svg"), 
          device = "svg", path = here("plots"))
-

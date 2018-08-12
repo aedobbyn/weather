@@ -44,7 +44,6 @@ clean_raw <- function(tbl) {
     un_kelvin() 
 }
 
-
 summarise_weather <- function(tbl) {
   tbl %>% 
     style_numeric() %>% 
@@ -57,4 +56,3 @@ summarise_weather <- function(tbl) {
     select(-dt) %>% 
     filter(date == lubridate::today() + 1)    # Grab just tomorrow
 }
-
