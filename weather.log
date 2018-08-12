@@ -1,0 +1,176 @@
+/bin/sh: Rscript: command not found
+/bin/sh: Rscript: command not found
+here() starts at /Users/amanda
+Error in file(filename, "r", encoding = encoding) : 
+  cannot open the connection
+Calls: source -> file
+In addition: Warning message:
+In file(filename, "r", encoding = encoding) :
+  cannot open file '/Users/amanda/get.R': No such file or directory
+Execution halted
+here() starts at /Users/amanda
+Error in file(filename, "r", encoding = encoding) : 
+  cannot open the connection
+Calls: source -> file
+In addition: Warning message:
+In file(filename, "r", encoding = encoding) :
+  cannot open file '/Users/amanda/get.R': No such file or directory
+Execution halted
+here() starts at /Users/amanda
+Created file .here in /Users/amanda/Desktop/Projects/weather
+Error in file(filename, "r", encoding = encoding) : 
+  cannot open the connection
+Calls: source -> file
+In addition: Warning message:
+In file(filename, "r", encoding = encoding) :
+  cannot open file '/Users/amanda/get.R': No such file or directory
+Execution halted
+here() starts at /Users/amanda
+File .here already exists in /Users/amanda/Desktop/Projects/weather
+Error in file(filename, "r", encoding = encoding) : 
+  cannot open the connection
+Calls: source -> file
+In addition: Warning message:
+In file(filename, "r", encoding = encoding) :
+  cannot open file '/Users/amanda/get.R': No such file or directory
+Execution halted
+here() starts at /Users/amanda
+File .here already exists in /Users/amanda/Desktop/Projects/weather
+Error in file(filename, "r", encoding = encoding) : 
+  cannot open the connection
+Calls: source -> file
+In addition: Warning message:
+In file(filename, "r", encoding = encoding) :
+  cannot open file '/Users/amanda/get.R': No such file or directory
+Execution halted
+here() starts at /Users/amanda
+File .here already exists in /Users/amanda/Desktop/Projects/weather
+Error in file(filename, "r", encoding = encoding) : 
+  cannot open the connection
+Calls: source -> file
+In addition: Warning message:
+In file(filename, "r", encoding = encoding) :
+  cannot open file '/Users/amanda/get.R': No such file or directory
+Execution halted
+here() starts at /Users/amanda
+File .here already exists in /Users/amanda/Desktop/Projects/weather
+Error in file(filename, "r", encoding = encoding) : 
+  cannot open the connection
+Calls: source -> file
+In addition: Warning message:
+In file(filename, "r", encoding = encoding) :
+  cannot open file '/Users/amanda/get.R': No such file or directory
+Execution halted
+here() starts at /Users/amanda
+Error in file(con, "rb") : cannot open the connection
+Calls: use_secret_file -> <Anonymous> -> readChar -> file
+In addition: Warning message:
+In file(con, "rb") :
+  cannot open file 'weather.json': No such file or directory
+Execution halted
+here() starts at /Users/amanda
+<!-- html table generated in R 3.5.1 by xtable 1.8-2 package -->
+<!-- Sat Aug 11 21:02:01 2018 -->
+<table border=1>
+<tr> <th>  </th> <th> date </th> <th> time </th> <th> description </th> <th> temp </th> <th> temp_min </th> <th> temp_max </th> <th> rain_last_3h </th> <th> cloud_perc </th> <th> wind_speed </th> <th> humidity </th>  </tr>
+  <tr> <td align="right"> 1 </td> <td> 2018-08-12 </td> <td> 03 </td> <td> light rain </td> <td align="right"> 71.80 </td> <td align="right"> 70.95 </td> <td align="right"> 71.80 </td> <td> 0.005 </td> <td align="right"> 20.00 </td> <td align="right"> 2.28 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 2 </td> <td> 2018-08-12 </td> <td> 06 </td> <td> light rain </td> <td align="right"> 71.85 </td> <td align="right"> 71.22 </td> <td align="right"> 71.85 </td> <td>  </td> <td align="right"> 56.00 </td> <td align="right"> 2.86 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 3 </td> <td> 2018-08-12 </td> <td> 09 </td> <td> light rain </td> <td align="right"> 72.00 </td> <td align="right"> 71.58 </td> <td align="right"> 72.00 </td> <td>  </td> <td align="right"> 68.00 </td> <td align="right"> 3.17 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 4 </td> <td> 2018-08-12 </td> <td> 12 </td> <td> light rain </td> <td align="right"> 72.72 </td> <td align="right"> 72.50 </td> <td align="right"> 72.72 </td> <td> 0.455 </td> <td align="right"> 92.00 </td> <td align="right"> 3.26 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 5 </td> <td> 2018-08-12 </td> <td> 15 </td> <td> light rain </td> <td align="right"> 72.66 </td> <td align="right"> 72.66 </td> <td align="right"> 72.66 </td> <td> 2.825 </td> <td align="right"> 92.00 </td> <td align="right"> 2.31 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 6 </td> <td> 2018-08-12 </td> <td> 18 </td> <td> light rain </td> <td align="right"> 73.95 </td> <td align="right"> 73.95 </td> <td align="right"> 73.95 </td> <td> 4.6 </td> <td align="right"> 92.00 </td> <td align="right"> 2.68 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 7 </td> <td> 2018-08-12 </td> <td> 21 </td> <td> light rain </td> <td align="right"> 71.38 </td> <td align="right"> 71.38 </td> <td align="right"> 71.38 </td> <td> 3.29 </td> <td align="right"> 92.00 </td> <td align="right"> 3.36 </td> <td align="right"> 100.00 </td> </tr>
+   </table>
+Waiting for authentication in browser...
+Press Esc/Ctrl + C to abort
+Please point your browser to the following url: 
+https://accounts.google.com/o/oauth2/auth?client_id=955034766742-huv7d1b1euegvk5vfmfq7v83u4rpdqb0.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.modify%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.compose%20https%3A%2F%2Fmail.google.com%2F&redirect_uri=http%3A%2F%2Flocalhost%3A1410%2F&response_type=code&state=NHRCSE1aXu
+here() starts at /Users/amanda
+<!-- html table generated in R 3.5.1 by xtable 1.8-2 package -->
+<!-- Sat Aug 11 21:03:03 2018 -->
+<table border=1>
+<tr> <th>  </th> <th> date </th> <th> time </th> <th> description </th> <th> temp </th> <th> temp_min </th> <th> temp_max </th> <th> rain_last_3h </th> <th> cloud_perc </th> <th> wind_speed </th> <th> humidity </th>  </tr>
+  <tr> <td align="right"> 1 </td> <td> 2018-08-12 </td> <td> 03 </td> <td> light rain </td> <td align="right"> 71.80 </td> <td align="right"> 70.95 </td> <td align="right"> 71.80 </td> <td> 0.005 </td> <td align="right"> 20.00 </td> <td align="right"> 2.28 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 2 </td> <td> 2018-08-12 </td> <td> 06 </td> <td> light rain </td> <td align="right"> 71.85 </td> <td align="right"> 71.22 </td> <td align="right"> 71.85 </td> <td>  </td> <td align="right"> 56.00 </td> <td align="right"> 2.86 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 3 </td> <td> 2018-08-12 </td> <td> 09 </td> <td> light rain </td> <td align="right"> 72.00 </td> <td align="right"> 71.58 </td> <td align="right"> 72.00 </td> <td>  </td> <td align="right"> 68.00 </td> <td align="right"> 3.17 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 4 </td> <td> 2018-08-12 </td> <td> 12 </td> <td> light rain </td> <td align="right"> 72.72 </td> <td align="right"> 72.50 </td> <td align="right"> 72.72 </td> <td> 0.455 </td> <td align="right"> 92.00 </td> <td align="right"> 3.26 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 5 </td> <td> 2018-08-12 </td> <td> 15 </td> <td> light rain </td> <td align="right"> 72.66 </td> <td align="right"> 72.66 </td> <td align="right"> 72.66 </td> <td> 2.825 </td> <td align="right"> 92.00 </td> <td align="right"> 2.31 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 6 </td> <td> 2018-08-12 </td> <td> 18 </td> <td> light rain </td> <td align="right"> 73.95 </td> <td align="right"> 73.95 </td> <td align="right"> 73.95 </td> <td> 4.6 </td> <td align="right"> 92.00 </td> <td align="right"> 2.68 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 7 </td> <td> 2018-08-12 </td> <td> 21 </td> <td> light rain </td> <td align="right"> 71.38 </td> <td align="right"> 71.38 </td> <td align="right"> 71.38 </td> <td> 3.29 </td> <td align="right"> 92.00 </td> <td align="right"> 3.36 </td> <td align="right"> 100.00 </td> </tr>
+   </table>
+createTcpServer: address already in use
+Error in httpuv::startServer(use$host, use$port, list(call = listen)) : 
+  Failed to create server
+Calls: send_message ... init_oauth2.0 -> oauth_authorize -> oauth_listener -> <Anonymous>
+Execution halted
+here() starts at /Users/amanda
+<!-- html table generated in R 3.5.1 by xtable 1.8-2 package -->
+<!-- Sat Aug 11 21:04:01 2018 -->
+<table border=1>
+<tr> <th>  </th> <th> date </th> <th> time </th> <th> description </th> <th> temp </th> <th> temp_min </th> <th> temp_max </th> <th> rain_last_3h </th> <th> cloud_perc </th> <th> wind_speed </th> <th> humidity </th>  </tr>
+  <tr> <td align="right"> 1 </td> <td> 2018-08-12 </td> <td> 03 </td> <td> light rain </td> <td align="right"> 71.80 </td> <td align="right"> 70.95 </td> <td align="right"> 71.80 </td> <td> 0.005 </td> <td align="right"> 20.00 </td> <td align="right"> 2.28 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 2 </td> <td> 2018-08-12 </td> <td> 06 </td> <td> light rain </td> <td align="right"> 71.85 </td> <td align="right"> 71.22 </td> <td align="right"> 71.85 </td> <td>  </td> <td align="right"> 56.00 </td> <td align="right"> 2.86 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 3 </td> <td> 2018-08-12 </td> <td> 09 </td> <td> light rain </td> <td align="right"> 72.00 </td> <td align="right"> 71.58 </td> <td align="right"> 72.00 </td> <td>  </td> <td align="right"> 68.00 </td> <td align="right"> 3.17 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 4 </td> <td> 2018-08-12 </td> <td> 12 </td> <td> light rain </td> <td align="right"> 72.72 </td> <td align="right"> 72.50 </td> <td align="right"> 72.72 </td> <td> 0.455 </td> <td align="right"> 92.00 </td> <td align="right"> 3.26 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 5 </td> <td> 2018-08-12 </td> <td> 15 </td> <td> light rain </td> <td align="right"> 72.66 </td> <td align="right"> 72.66 </td> <td align="right"> 72.66 </td> <td> 2.825 </td> <td align="right"> 92.00 </td> <td align="right"> 2.31 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 6 </td> <td> 2018-08-12 </td> <td> 18 </td> <td> light rain </td> <td align="right"> 73.95 </td> <td align="right"> 73.95 </td> <td align="right"> 73.95 </td> <td> 4.6 </td> <td align="right"> 92.00 </td> <td align="right"> 2.68 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 7 </td> <td> 2018-08-12 </td> <td> 21 </td> <td> light rain </td> <td align="right"> 71.38 </td> <td align="right"> 71.38 </td> <td align="right"> 71.38 </td> <td> 3.29 </td> <td align="right"> 92.00 </td> <td align="right"> 3.36 </td> <td align="right"> 100.00 </td> </tr>
+   </table>
+createTcpServer: address already in use
+Error in httpuv::startServer(use$host, use$port, list(call = listen)) : 
+  Failed to create server
+Calls: send_message ... init_oauth2.0 -> oauth_authorize -> oauth_listener -> <Anonymous>
+Execution halted
+here() starts at /Users/amanda
+<!-- html table generated in R 3.5.1 by xtable 1.8-2 package -->
+<!-- Sat Aug 11 21:05:02 2018 -->
+<table border=1>
+<tr> <th>  </th> <th> date </th> <th> time </th> <th> description </th> <th> temp </th> <th> temp_min </th> <th> temp_max </th> <th> rain_last_3h </th> <th> cloud_perc </th> <th> wind_speed </th> <th> humidity </th>  </tr>
+  <tr> <td align="right"> 1 </td> <td> 2018-08-12 </td> <td> 03 </td> <td> light rain </td> <td align="right"> 71.80 </td> <td align="right"> 70.95 </td> <td align="right"> 71.80 </td> <td> 0.005 </td> <td align="right"> 20.00 </td> <td align="right"> 2.28 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 2 </td> <td> 2018-08-12 </td> <td> 06 </td> <td> light rain </td> <td align="right"> 71.85 </td> <td align="right"> 71.22 </td> <td align="right"> 71.85 </td> <td>  </td> <td align="right"> 56.00 </td> <td align="right"> 2.86 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 3 </td> <td> 2018-08-12 </td> <td> 09 </td> <td> light rain </td> <td align="right"> 72.00 </td> <td align="right"> 71.58 </td> <td align="right"> 72.00 </td> <td>  </td> <td align="right"> 68.00 </td> <td align="right"> 3.17 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 4 </td> <td> 2018-08-12 </td> <td> 12 </td> <td> light rain </td> <td align="right"> 72.72 </td> <td align="right"> 72.50 </td> <td align="right"> 72.72 </td> <td> 0.455 </td> <td align="right"> 92.00 </td> <td align="right"> 3.26 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 5 </td> <td> 2018-08-12 </td> <td> 15 </td> <td> light rain </td> <td align="right"> 72.66 </td> <td align="right"> 72.66 </td> <td align="right"> 72.66 </td> <td> 2.825 </td> <td align="right"> 92.00 </td> <td align="right"> 2.31 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 6 </td> <td> 2018-08-12 </td> <td> 18 </td> <td> light rain </td> <td align="right"> 73.95 </td> <td align="right"> 73.95 </td> <td align="right"> 73.95 </td> <td> 4.6 </td> <td align="right"> 92.00 </td> <td align="right"> 2.68 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 7 </td> <td> 2018-08-12 </td> <td> 21 </td> <td> light rain </td> <td align="right"> 71.38 </td> <td align="right"> 71.38 </td> <td align="right"> 71.38 </td> <td> 3.29 </td> <td align="right"> 92.00 </td> <td align="right"> 3.36 </td> <td align="right"> 100.00 </td> </tr>
+   </table>
+createTcpServer: address already in use
+Error in httpuv::startServer(use$host, use$port, list(call = listen)) : 
+  Failed to create server
+Calls: send_message ... init_oauth2.0 -> oauth_authorize -> oauth_listener -> <Anonymous>
+Execution halted
+here() starts at /Users/amanda
+<!-- html table generated in R 3.5.1 by xtable 1.8-2 package -->
+<!-- Sat Aug 11 21:06:02 2018 -->
+<table border=1>
+<tr> <th>  </th> <th> date </th> <th> time </th> <th> description </th> <th> temp </th> <th> temp_min </th> <th> temp_max </th> <th> rain_last_3h </th> <th> cloud_perc </th> <th> wind_speed </th> <th> humidity </th>  </tr>
+  <tr> <td align="right"> 1 </td> <td> 2018-08-12 </td> <td> 03 </td> <td> light rain </td> <td align="right"> 71.80 </td> <td align="right"> 70.95 </td> <td align="right"> 71.80 </td> <td> 0.005 </td> <td align="right"> 20.00 </td> <td align="right"> 2.28 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 2 </td> <td> 2018-08-12 </td> <td> 06 </td> <td> light rain </td> <td align="right"> 71.85 </td> <td align="right"> 71.22 </td> <td align="right"> 71.85 </td> <td>  </td> <td align="right"> 56.00 </td> <td align="right"> 2.86 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 3 </td> <td> 2018-08-12 </td> <td> 09 </td> <td> light rain </td> <td align="right"> 72.00 </td> <td align="right"> 71.58 </td> <td align="right"> 72.00 </td> <td>  </td> <td align="right"> 68.00 </td> <td align="right"> 3.17 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 4 </td> <td> 2018-08-12 </td> <td> 12 </td> <td> light rain </td> <td align="right"> 72.72 </td> <td align="right"> 72.50 </td> <td align="right"> 72.72 </td> <td> 0.455 </td> <td align="right"> 92.00 </td> <td align="right"> 3.26 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 5 </td> <td> 2018-08-12 </td> <td> 15 </td> <td> light rain </td> <td align="right"> 72.66 </td> <td align="right"> 72.66 </td> <td align="right"> 72.66 </td> <td> 2.825 </td> <td align="right"> 92.00 </td> <td align="right"> 2.31 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 6 </td> <td> 2018-08-12 </td> <td> 18 </td> <td> light rain </td> <td align="right"> 73.95 </td> <td align="right"> 73.95 </td> <td align="right"> 73.95 </td> <td> 4.6 </td> <td align="right"> 92.00 </td> <td align="right"> 2.68 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 7 </td> <td> 2018-08-12 </td> <td> 21 </td> <td> light rain </td> <td align="right"> 71.38 </td> <td align="right"> 71.38 </td> <td align="right"> 71.38 </td> <td> 3.29 </td> <td align="right"> 92.00 </td> <td align="right"> 3.36 </td> <td align="right"> 100.00 </td> </tr>
+   </table>
+Waiting for authentication in browser...
+Press Esc/Ctrl + C to abort
+Please point your browser to the following url: 
+https://accounts.google.com/o/oauth2/auth?client_id=955034766742-huv7d1b1euegvk5vfmfq7v83u4rpdqb0.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.modify%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.compose%20https%3A%2F%2Fmail.google.com%2F&redirect_uri=http%3A%2F%2Flocalhost%3A1410%2F&response_type=code&state=zhcyXcOqi3
+here() starts at /Users/amanda
+<!-- html table generated in R 3.5.1 by xtable 1.8-2 package -->
+<!-- Sat Aug 11 21:07:02 2018 -->
+<table border=1>
+<tr> <th>  </th> <th> date </th> <th> time </th> <th> description </th> <th> temp </th> <th> temp_min </th> <th> temp_max </th> <th> rain_last_3h </th> <th> cloud_perc </th> <th> wind_speed </th> <th> humidity </th>  </tr>
+  <tr> <td align="right"> 1 </td> <td> 2018-08-12 </td> <td> 03 </td> <td> light rain </td> <td align="right"> 71.80 </td> <td align="right"> 70.95 </td> <td align="right"> 71.80 </td> <td> 0.005 </td> <td align="right"> 20.00 </td> <td align="right"> 2.28 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 2 </td> <td> 2018-08-12 </td> <td> 06 </td> <td> light rain </td> <td align="right"> 71.85 </td> <td align="right"> 71.22 </td> <td align="right"> 71.85 </td> <td>  </td> <td align="right"> 56.00 </td> <td align="right"> 2.86 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 3 </td> <td> 2018-08-12 </td> <td> 09 </td> <td> light rain </td> <td align="right"> 72.00 </td> <td align="right"> 71.58 </td> <td align="right"> 72.00 </td> <td>  </td> <td align="right"> 68.00 </td> <td align="right"> 3.17 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 4 </td> <td> 2018-08-12 </td> <td> 12 </td> <td> light rain </td> <td align="right"> 72.72 </td> <td align="right"> 72.50 </td> <td align="right"> 72.72 </td> <td> 0.455 </td> <td align="right"> 92.00 </td> <td align="right"> 3.26 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 5 </td> <td> 2018-08-12 </td> <td> 15 </td> <td> light rain </td> <td align="right"> 72.66 </td> <td align="right"> 72.66 </td> <td align="right"> 72.66 </td> <td> 2.825 </td> <td align="right"> 92.00 </td> <td align="right"> 2.31 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 6 </td> <td> 2018-08-12 </td> <td> 18 </td> <td> light rain </td> <td align="right"> 73.95 </td> <td align="right"> 73.95 </td> <td align="right"> 73.95 </td> <td> 4.6 </td> <td align="right"> 92.00 </td> <td align="right"> 2.68 </td> <td align="right"> 100.00 </td> </tr>
+  <tr> <td align="right"> 7 </td> <td> 2018-08-12 </td> <td> 21 </td> <td> light rain </td> <td align="right"> 71.38 </td> <td align="right"> 71.38 </td> <td align="right"> 71.38 </td> <td> 3.29 </td> <td align="right"> 92.00 </td> <td align="right"> 3.36 </td> <td align="right"> 100.00 </td> </tr>
+   </table>
+createTcpServer: address already in use
+Error in httpuv::startServer(use$host, use$port, list(call = listen)) : 
+  Failed to create server
+Calls: send_message ... init_oauth2.0 -> oauth_authorize -> oauth_listener -> <Anonymous>
+Execution halted

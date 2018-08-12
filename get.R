@@ -1,6 +1,6 @@
 library(here)
-source(here("startup.R"))
-source(here("utils.R"))
+source(prepend_root_dir("startup.R"))
+source(prepend_root_dir("utils.R"))
 
 raw <- get_raw_forecast("11238")
 

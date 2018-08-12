@@ -1,8 +1,14 @@
 library(here)
-suppressPackageStartupMessages(library(gmailr))
-source(here("get.R"))
+# set_here("/Users/amanda/Desktop/Projects/weather")
 
-use_secret_file("weather.json")
+root_dir <- "/Users/amanda/Desktop/Projects/weather"
+prepend_root_dir <- function(path) {
+  glue::glue("{root_dir}/{path}")
+}
+suppressPackageStartupMessages(library(gmailr))
+source(prepend_root_dir("get.R"))
+
+# use_secret_file("weather.json")
 
 msg <- mime() %>%
   to("amanda.e.dobbyn@gmail.com") %>%
