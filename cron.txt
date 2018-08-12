@@ -1,0 +1,5 @@
+https://github.com/jimhester/gmailr/issues/71#issuecomment-380792718
+
+cron needs to cd into the directory where .httr-oauth is before running the script in order for non-browser auth to work, e.g.,
+
+01 08 * * * cd ~/weather && nohup Rscript ~/weather/coalesce.R >> ~/weather/weather.log 2>&1 &
