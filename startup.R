@@ -1,6 +1,5 @@
 # devtools::install_github("aedobbyn/owmr", ref = "dev")
 suppressPackageStartupMessages({
-  library(dobtools)
   library(ggplot2)
   library(glue)
   library(gmailr)

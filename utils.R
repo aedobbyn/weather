@@ -24,6 +24,42 @@ un_kelvin <- function(tbl) {
               funs(kelvin_to_fahrenheit))
 }
 
+# dobtools would not install on server, so copying these two funs here instead
+style_numeric <- function(df, digits = 3, add_commas = FALSE, dont_add_commas = NULL) {
+  year_cols <- names(df)[c(which(names(df) == "year"), which(names(df) ==
+                                                               "Year"))]
+  if (!is.null(dont_add_commas)) {
+    year_cols <- c(year_cols, dont_add_commas)
+  }
+  if (length(year_cols) > 0) {
+    non_year_cols <- names(df)[-which(names(df) == year_cols)]
+  }
+  else {
+    non_year_cols <- names(df)
+  }
+  df <- df %>%
+    purrr::map_if(is.numeric, round, digits = digits) %>%
+    tibble::as_tibble()
+  if (add_commas == TRUE) {
+    for (col in names(df)) {
+      if (is.numeric(df[[col]]) & !(col %in% year_cols)) {
+        df[[col]] <- df[[col]] %>% (scales::comma_format())()
+      }
+    }
+    message(paste0("Adding commas to columns: ", stringr::str_c(non_year_cols,
+                                                                collapse = ", "
+    )))
+  }
+  return(df)
+}
+
+
+replace_na_df <- function(df, replacement = "") {
+  out <- df %>% replace(is.na(.), "")
+  return(out)
+}
+
+
 clean_raw <- function(tbl) {
   tbl %>% 
     nix_mains() %>% 
@@ -44,7 +80,7 @@ clean_raw <- function(tbl) {
     un_kelvin() 
 }
 
-summarise_weather <- function(tbl) {
+tomorrows_weather <- function(tbl) {
   tbl %>% 
     style_numeric() %>% 
     replace_na_df() %>% 
@@ -56,3 +92,7 @@ summarise_weather <- function(tbl) {
     select(-dt) %>% 
     filter(date == lubridate::today() + 1)    # Grab just tomorrow
 }
+
+# todays_weather <- function()
+
+
