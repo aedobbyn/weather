@@ -11,4 +11,4 @@ suppressPackageStartupMessages({
 
 source(prepend_root_dir("keys.R"))
 
-owmr_settings(api_key = openweathermap_key)
+# owmr_settings(api_key = openweathermap_key)

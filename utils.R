@@ -1,17 +1,10 @@
-get_raw_forecast <- function(zip, simplify = TRUE, ...) {
-  get_forecast(zip = zip, 
-               simplify = simplify)
-}
+# get_raw_forecast <- function(zip, simplify = TRUE, ...) {
+#   get_forecast(zip = zip, 
+#                simplify = simplify)
+# }
 
 pluck_weather <- function(x, col) {
   x[[1]][[col]]
-}
-
-nix_mains <- function(tbl) {
-  names(tbl) <- names(tbl) %>% 
-    map_chr(str_replace_all, "main_", "")
-  
-  tbl
 }
 
 kelvin_to_fahrenheit <- function(x) {
@@ -62,25 +55,39 @@ replace_na_df <- function(df, replacement = "") {
 
 clean_raw <- function(tbl) {
   tbl %>% 
-    nix_mains() %>% 
-    mutate(
-      date_time = dt_txt %>% lubridate::as_datetime(),
-      description = weather %>% 
-        pluck_weather("description")
-    ) %>% 
     rename(
-      rain_last_3h = rain_3h,
       cloud_perc = clouds_all
     ) %>% 
-    select(dt, date_time, description,
+    un_kelvin()
+}
+
+clean_forecast <- function(tbl) {
+  tbl %>% 
+    mutate(
+      date_time = dt_txt %>% lubridate::as_datetime()
+    ) %>% 
+    clean_raw() %>% 
+    rename(
+      rain_last_3h = rain_3h,
+    ) %>% 
+    select(date_time, description, -main,
            starts_with("temp"), -temp_kf, # an internal param
            rain_last_3h, cloud_perc, 
            wind_speed, humidity
-    ) %>% 
-    un_kelvin() 
+    )  
 }
 
-tomorrows_weather <- function(tbl) {
+clean_current <- function(tbl) {
+  tbl %>% 
+    mutate(
+      date_time = lubridate::now()
+    ) %>% 
+    clean_raw() %>% 
+    select(date_time, description, temp, temp_min, temp_max, 
+           cloud_perc, wind_speed, everything())
+}
+
+prettify <- function(tbl) {
   tbl %>% 
     style_numeric() %>% 
     replace_na_df() %>% 
@@ -88,11 +95,10 @@ tomorrows_weather <- function(tbl) {
       date_time = as.character(date_time)
     ) %>%  
     separate(date_time, into = c("date", "time"), " ") %>% 
-    mutate(time = str_remove_all(time, ":[0-9:]+")) %>% 
-    select(-dt) %>% 
-    filter(date == lubridate::today() + 1)    # Grab just tomorrow
+    mutate(time = str_remove_all(time, ":[0-9:]+"))
 }
 
-# todays_weather <- function()
-
-
+grab_tomorrow <- function(tbl) {
+  tbl %>% 
+    filter(date == lubridate::today() + 1)    # Grab just tomorrow
+}
