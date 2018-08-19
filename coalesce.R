@@ -5,7 +5,7 @@ prepend_root_dir <- function(path) {
   glue::glue("{root_dir}/{path}")
 }
 
-source(prepend_root_dir("get.R"))
+source(prepend_root_dir("get_forecast.R"))
 
 # gmail_auth()
 # use_secret_file(prepend_root_dir("weather.json"))

@@ -99,8 +99,15 @@ prettify <- function(tbl) {
 }
 
 grab_tomorrow <- function(tbl) {
-  tbl %>% 
-    filter(date == lubridate::today() + 1)    # Grab just tomorrow
+  if (!"date" %in% names(tbl)) {
+    tbl %>% 
+      mutate(date = date_time %>% lubridate::as_date()) %>% 
+      filter(date == lubridate::today() + 1) %>% 
+      select(-date)
+  } else {
+    tbl %>% 
+      filter(date == lubridate::today() + 1)    # Grab just tomorrow
+  }
 }
 
 get_diffs <- function(tbl) {
