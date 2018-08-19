@@ -102,3 +102,43 @@ grab_tomorrow <- function(tbl) {
   tbl %>% 
     filter(date == lubridate::today() + 1)    # Grab just tomorrow
 }
+
+get_diffs <- function(tbl) {
+  individual <- tbl %>% 
+    mutate(
+      temp_diff = (mean(.$temp) - mean(current_clean$temp)) %>% abs(),
+      cloud_perc_diff = (mean(.$cloud_perc) - mean(current_clean$cloud_perc)) %>% abs(),
+      humidity_diff = (mean(.$humidity) - mean(current_clean$humidity)) %>% abs()
+    ) 
+  
+  total <- individual %>% 
+    select(ends_with("diff"), -time_diff) %>% 
+    as_vector(.type = "double") %>% sum()
+  
+  individual %>% 
+    mutate(
+      total_diff = total
+    )
+}
+
+add_diffs <- function(tbl) {
+  tbl %>% 
+    mutate(
+      current_time = current_clean$date_time[1],
+      time_diff = date_time - current_time
+    ) %>% 
+    rowwise() %>% 
+    mutate(
+      closest_time = case_when(
+        time_diff == min(.$time_diff) ~ TRUE,
+        time_diff > min(.$time_diff) ~ FALSE
+      )
+    ) %>% 
+    ungroup() %>% 
+    filter(closest_time == TRUE) %>% 
+    get_diffs() 
+}
+
+
+
+

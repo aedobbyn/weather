@@ -1,12 +1,15 @@
 source(prepend_root_dir("startup.R"))
 source(prepend_root_dir("utils.R"))
 
-raw_forecast <- get_forecast("11238")
-raw_current <- get_current("11238")
+forecast_raw <- get_forecast("11238")
+current_raw <- get_current("11238")
 
-forecast <- raw_forecast %>% clean_forecast() %>% prettify()
-current <- raw_current %>% clean_current() %>% prettify()
+forecast_clean <- raw_forecast %>% clean_forecast() 
+current_clean <- current_raw %>% clean_current() 
 
-tomorrow_forecast <- forecast %>% grab_tomorrow()
+forecast_pretty <- forecast_clean %>% prettify()
+current_pretty <- current_clean %>% prettify()
+
+tomorrow_forecast <- forecast_pretty %>% grab_tomorrow()
 
 # gist <- summarise_weather(clean)
